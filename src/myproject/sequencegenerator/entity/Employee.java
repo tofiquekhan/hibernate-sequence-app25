@@ -14,8 +14,8 @@ public class Employee {
 
 	@Id
 	@Column(name = "eno")
-	@SequenceGenerator(name = "seqGenerator",sequenceName = "my_sequence")
-	@GeneratedValue(strategy = GenerationType.AUTO,generator = "seqGenerator")
+//	@SequenceGenerator(name = "seqGenerator",sequenceName = "my_sequence")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int eno;
 	@Column(name = "ename")
 	private String ename;
